@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Layout, Switch, Typography, Flex, Button, message } from "antd";
+import { Layout, Switch, Typography, Button, message } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { selectTheme, setTheme } from "../store/theme.slice";
 import { SunOutlined, MoonOutlined } from "@ant-design/icons";
