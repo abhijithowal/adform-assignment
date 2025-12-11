@@ -24,7 +24,9 @@ function App() {
   const filteredCampaigns = useSelector(
     (state: RootState) => state.campaigns.filteredList
   );
-  const loading = useSelector((state: RootState) => state.users.status === "loading");
+  const loading = useSelector(
+    (state: RootState) => state.users.status === "loading"
+  );
 
   return (
     <ConfigProvider
@@ -40,8 +42,11 @@ function App() {
         <Content style={{ padding: "24px" }}>
           <div className="flex flex-col gap-y-8">
             <Filters />
-
-            {loading ? <Loader  /> : <CampaignTable data={filteredCampaigns} users={users} />}
+            {loading ? (
+              <Loader />
+            ) : (
+              <CampaignTable data={filteredCampaigns} users={users} />
+            )}
           </div>
         </Content>
       </Layout>

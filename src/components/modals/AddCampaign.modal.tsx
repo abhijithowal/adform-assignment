@@ -169,7 +169,7 @@ export default function AddCampaignModal({
           )}
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 md:col-span-1 col-span-2">
             <Text className="text-sm font-medium text-gray-700 dark:text-gray-300">
               Start Date <span className="text-red-500">*</span>
             </Text>
@@ -190,7 +190,7 @@ export default function AddCampaignModal({
               </p>
             )}
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 md:col-span-1 col-span-2">
             <Text className="text-sm font-medium text-gray-700 dark:text-gray-300">
               End Date <span className="text-red-500">*</span>
             </Text>
@@ -214,7 +214,7 @@ export default function AddCampaignModal({
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 md:col-span-1 col-span-2">
             <Text className="text-sm font-medium text-gray-700 dark:text-gray-300">
               Budget <span className="text-red-500">*</span>
             </Text>
@@ -239,7 +239,7 @@ export default function AddCampaignModal({
               </p>
             )}
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 md:col-span-1 col-span-2">
             <Text className="text-sm font-medium text-gray-700 dark:text-gray-300">
               User <span className="text-red-500">*</span>
             </Text>

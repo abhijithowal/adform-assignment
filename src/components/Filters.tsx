@@ -50,7 +50,7 @@ export default function Filters() {
   }
 
   return (
-    <div className="flex justify-between w-full ">
+    <div className="flex justify-between w-full md:flex-row flex-col gap-y-4">
       {isLoading ? (
         <div className="flex gap-x-4">
           <Skeleton.Input active className="w-32" />
